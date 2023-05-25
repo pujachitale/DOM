@@ -76,6 +76,17 @@ lastItem.style.color= "blue"
 var seconditem=document.querySelector(".list-group-item:nth-child(2) ")
 seconditem.style.color="coral"
 
+var seconditem=document.querySelector(".list-group-item:nth-child(2)")
+seconditem.style.backgroundColor="green"
+
+
+var thirditem=document.querySelector(".list-group-item:nth-child(3)")
+console.log(thirditem)
+thirditem.style.visibility="hidden"
+
+
+
+
 // queryselectorAll
 var titles=document.querySelectorAll('.title')
 console.log(titles)
