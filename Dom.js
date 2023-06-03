@@ -102,8 +102,8 @@
 
 
 // TRAVERSING THE DOM
-var itemlist=document.querySelector('#items')
-// ParentNode
+// var itemlist=document.querySelector('#items')
+// // ParentNode
 // console.log(itemlist.parentNode)
 // itemlist.parentNode.style.backgroundColor="#f4f4f4"
 // console.log(itemlist.parentNode.parentNode,parentNode)
@@ -147,31 +147,31 @@ var itemlist=document.querySelector('#items')
 // // create Element
 
 // create a Div
-var newDiv= document.createElement("div")
+// var newDiv= document.createElement("div")
 
-// Add class
-newDiv.className='hello'
+// // Add class
+// newDiv.className='hello'
 
-// add id
-newDiv.id='hello1'
+// // add id
+// newDiv.id='hello1'
 
-// add attr
-newDiv.setAttribute('title','Hello Div')
+// // add attr
+// newDiv.setAttribute('title','Hello Div')
 
-// create text node
-var newdivtext=document.createTextNode('Hello World')
+// // create text node
+// var newdivtext=document.createTextNode('Hello World')
 
-// Add text to div
-newDiv.appendChild(newdivtext)
+// // Add text to div
+// newDiv.appendChild(newdivtext)
 
-var container=document.querySelector('header .container')
-var h1=document.querySelector('header h1')
+// var container=document.querySelector('header .container')
+// var h1=document.querySelector('header h1')
 
-console.log(newDiv)
+// console.log(newDiv)
 
-newDiv.style.fontSize='30px'
+// newDiv.style.fontSize='30px'
 
-container.insertBefore(newDiv,h1)
+// container.insertBefore(newDiv,h1)
 
 
 
