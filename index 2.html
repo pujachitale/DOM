@@ -16,6 +16,7 @@
     <input type="tel" name="phonenumber">
     <button>submit</button>
 </form>
+<ul id="listOfUsers"></ul>
 <script>
     function savetolocal(event){
         event.preventDefault()
@@ -31,7 +32,13 @@
             phonenumber
 
         }
-        localStorage.setItem('user',JSON.stringify (obj))
+        localStorage.setItem(obj.email,JSON.stringify(obj))
+        showUserOnScreen(obj)
+    }
+    function showUserOnScreen(user){
+        const parentNode=document.getElementById('listOfUsers')
+        const childHTML=`<li> ${user.name}-----${user.email}--------${user.phonenumber}</li>`
+            parentNode.innerHTML=parentNode.innerHTML+childHTML
     }
 </script>
 
